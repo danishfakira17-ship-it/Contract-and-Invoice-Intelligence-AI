@@ -47,4 +47,4 @@ uvicorn app.main:app --reload
 
 ## Limitations
 
-Mock ERP and email; 3 sample policies; PDF only; small benchmark.
+Mock ERP and email; 15 sample policies; PDF only; small benchmark.
