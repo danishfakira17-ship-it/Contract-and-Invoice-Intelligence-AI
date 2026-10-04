@@ -1,0 +1,1 @@
+Duplicate invoice numbers from the same vendor must be rejected. Unknown vendors require procurement approval.

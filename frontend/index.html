@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contract & Invoice Intelligence</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contract &amp; Invoice Intelligence</h1>
+    <p>Multi-agent document review on Azure AI</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Upload an invoice (PDF)</h2>
+      <input type="file" id="fileInput" accept=".pdf">
+      <button id="uploadBtn">Upload and process</button>
+      <span id="uploadMsg"></span>
+    </section>
+
+    <section class="card">
+      <h2>Documents</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>File</th><th>Vendor</th><th>Total</th>
+            <th>Risk</th><th>Status</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="docRows"></tbody>
+      </table>
+    </section>
+
+    <section class="card" id="detail" style="display:none">
+      <h2 id="detailTitle"></h2>
+      <div id="actions"></div>
+      <div id="detailBody"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
